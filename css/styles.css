@@ -597,6 +597,9 @@ address {
     fill: #f4f4fd;
 }
 
+.footer-form {}
+
+
 
 /*--------------------MODAL-------------------*/
 .backdrop {
@@ -631,7 +634,7 @@ address {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    padding: 24px;
+    padding: 72px 24px 24px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -647,8 +650,8 @@ address {
     border-radius: 50%;
     padding: 0;
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.10);
-    border-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #e7e9fc;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -681,7 +684,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
-    padding-top: 48px;
+
 }
 
 .modal-form {}
@@ -696,8 +699,9 @@ address {
     border: 1px solid rgba(46, 47, 66, 0.40);
     height: 40px;
     margin-bottom: 0;
-    background-color: #2E2F42 40%;
-    outline: transparent;
+    background-color: transparent;
+    padding-left: 38px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -709,7 +713,7 @@ address {
 }
 
 .button-form {
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     border-radius: 4px;
     background-color: #4D5AE5;
@@ -724,8 +728,8 @@ address {
     margin-left: auto;
     margin-right: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-label {
@@ -734,7 +738,7 @@ address {
     font-size: 12px;
     font-style: normal;
     line-height: 1.17;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     margin-bottom: 4px;
     margin-top: 8px;
 }
@@ -744,6 +748,7 @@ address {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input-wrap {
@@ -756,10 +761,20 @@ address {
     border: 1px solid rgba(46, 47, 66, 0.40);
     height: 120px;
     background-color: #2E2F42 40%;
-    outline: transparent;
     padding: 8px 16px;
     resize: none;
+    color: rgba(46, 47, 66, 0.40);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-textarea:focus {
+    border-color: #4D5AE5;
+}
+
 
 .check-input {}
 
@@ -768,11 +783,12 @@ address {
 .check-text {
     color: #8E8F99;
     font-size: 12px;
-    line-height: 1.2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     display: flex;
     align-items: center;
     padding-bottom: 24px;
+
 }
 
 .check-text a {
@@ -791,7 +807,14 @@ address {
     align-items: center;
 }
 
+.user-span {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    fill: transparent;
+}
+
 .check-input:checked+.check-text span {
     background-color: #404BBF;
     border: none;
+    fill: #F4F4FD;
 }
