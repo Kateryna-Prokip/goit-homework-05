@@ -501,7 +501,6 @@ address {
 .footer {
     background: #2E2F42;
     padding: 100px 0;
-
 }
 
 .container-footer {
@@ -548,6 +547,11 @@ address {
     letter-spacing: 0.02em;
 }
 
+.subscribe-block {
+    display: block;
+    margin-left: 80px;
+}
+
 .footer-fb {}
 
 .footer-fb-text {
@@ -558,7 +562,6 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
-
 }
 
 .footer-list {
@@ -616,6 +619,8 @@ address {
 
 .footer-form {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 24px;
 }
 
@@ -647,7 +652,6 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
     min-width: 165px;
     height: 40px;
     cursor: pointer;
@@ -748,7 +752,7 @@ address {
 .modal-form {}
 
 .modal-field {
-    margin-bottom: 16x;
+    margin-bottom: 8px;
 }
 
 .modal-input {
@@ -812,7 +816,7 @@ address {
 
 .modal-input-wrap {
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .modal-textarea {
@@ -849,7 +853,6 @@ address {
     display: flex;
     align-items: center;
     padding-bottom: 24px;
-
 }
 
 .check-text a {
@@ -860,19 +863,16 @@ address {
 .check-text span {
     width: 16px;
     height: 16px;
-
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     margin-right: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
+
 .user-span {
+    display: inline-flex;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: transparent;
-    display: inline-flex;
 }
 
 .check-input:checked+.check-text span {
