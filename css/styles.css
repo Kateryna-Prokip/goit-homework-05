@@ -501,6 +501,7 @@ address {
 .footer {
     background: #2E2F42;
     padding: 100px 0;
+
 }
 
 .container-footer {
@@ -601,9 +602,7 @@ address {
 }
 
 .footer-subscribe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 80px;
 }
 
 .subscribe-text {
