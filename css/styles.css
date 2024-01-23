@@ -56,9 +56,12 @@ address {
 }
 
 .container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* width: 1158px; */
+    max-width: 288px;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
     margin: 0 auto;
 }
 
@@ -240,7 +243,7 @@ address {
 
 /* --------------------Features---------------------------- */
 
-.features {
+/* .features {
     background: #FFF;
     padding-top: 120px;
     padding-bottom: 120px;
@@ -286,7 +289,7 @@ address {
     margin-bottom: 8px;
 
 
-}
+} */
 
 /* --------------------Features---------------------------- */
 
@@ -301,11 +304,13 @@ address {
     text-justify: auto;
     align-items: center;
     width: auto;
+
 }
 
 .hero-team {
     background: #F4F4FD;
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding-top: 96px;
 }
 
 
@@ -322,7 +327,7 @@ address {
 }
 
 .team-list {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     margin-bottom: 72px;
     gap: 24px;
@@ -331,12 +336,12 @@ address {
 
 .team-item {
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
+    /* width: calc((100% - 72px) / 4); */
+    */ border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-
+    margin-top: 72px;
 }
 
 .team-img {
@@ -401,7 +406,7 @@ address {
 
 /* --------------------Our team---------------------------- */
 /* --------------------Our portfolio---------------------------- */
-.our-portfolio {
+/* .our-portfolio {
     padding: 120px 0 120px 0;
 }
 
@@ -494,7 +499,7 @@ address {
 
 .portfolio-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
 
 /* --------------------Our portfolio---------------------------- */
 /* --------------------footer---------------------------- */
@@ -807,7 +812,6 @@ address {
     line-height: 1.17;
     letter-spacing: 0.04em;
     margin-bottom: 4px;
-    margin-top: 8px;
 }
 
 .modal-icon-adress {
@@ -884,3 +888,14 @@ address {
     border: none;
     fill: #F4F4FD;
 }
+
+
+@media screen and(min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .team-list {
+        display: flex;
+        margin-bottom: 64px;
+    }
