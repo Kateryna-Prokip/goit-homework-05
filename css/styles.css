@@ -310,7 +310,7 @@ address {
 .hero-team {
     background: #F4F4FD;
     /* padding: 120px 0; */
-    padding-top: 96px;
+    padding: 96px 0;
 }
 
 
@@ -406,8 +406,9 @@ address {
 
 /* --------------------Our team---------------------------- */
 /* --------------------Our portfolio---------------------------- */
-/* .our-portfolio {
-    padding: 120px 0 120px 0;
+.our-portfolio {
+    /* padding: 120px 0 120px 0; */
+    padding: 96px 0 96px 0;
 }
 
 .portfolio {
@@ -422,7 +423,7 @@ address {
 }
 
 .portfolio-list {
-    display: flex;
+    /* display: flex; */
     column-gap: 24px;
     row-gap: 48px;
     flex-wrap: wrap;
@@ -499,7 +500,7 @@ address {
 
 .portfolio-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-} */
+}
 
 /* --------------------Our portfolio---------------------------- */
 /* --------------------footer---------------------------- */
@@ -890,12 +891,36 @@ address {
 }
 
 
-@media screen and(min-width: 768px) {
+@media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
+        max-width: 584px;
     }
 
     .team-list {
         display: flex;
         margin-bottom: 64px;
+        row-gap: 0px;
+    }
+
+    .team-item {
+        margin-top: 0;
+        margin-bottom: 64px;
+    }
+
+
+    @media screen and (min-width: 1158px) {
+        .container {
+            max-width: 1158px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .hero-team {
+            padding: 120px 0;
+        }
+
+        .team-item {
+            width: calc((100% - 72px) / 4);
+            margin-top: 72px;
+        }
     }
